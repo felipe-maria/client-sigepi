@@ -3,7 +3,7 @@
 $sigepi-bkgcolor: #F1f1f1;
 
 body {
-    background-color: $sigepi-bkgcolor;
+  background-color: $sigepi-bkgcolor;
 }
 
 article {
@@ -12,5 +12,12 @@ article {
 }
 
 html {
+  height: 100%;
   background-color: $sigepi-bkgcolor;
+}
+
+//html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
