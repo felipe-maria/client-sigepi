@@ -5,8 +5,8 @@ import { NgxPopper } from 'angular-popper';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardsModule } from './cards/cards.module';
 import { CoreModule } from './core/core.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,11 @@ import { CoreModule } from './core/core.module';
   ],
   imports: [
     BrowserModule,
-    CoreModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgxPopper,
-    CardsModule
+    HomeModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
