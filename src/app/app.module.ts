@@ -6,7 +6,7 @@ import { NgxPopper } from 'angular-popper';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { HomeModule } from './home/home.module';
+import { HomeModule } from './page/home/home.module';
 
 @NgModule({
   declarations: [
