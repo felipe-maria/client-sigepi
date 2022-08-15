@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <ol class="list-unstyled">
+    <li *ngFor="let cols of rows" class="row mt-4">
+      <div *ngFor="let card of cols" class="col-sm-5">
+        <sigepi-card
+            [title]='card.title'
+            [text]='card.text'
+            [buttonText]='card.buttonText'>
+        </sigepi-card>
+      </div>
+    </li>
+  </ol>
+</div>
