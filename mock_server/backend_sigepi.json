@@ -2,21 +2,33 @@
   "users": [
     {
       "id": 1,
-      "name": "System admin",
-      "emailAddress": "sys_admin@sigepi.com.br",
-      "cpfNumber": "14296740244",
-      "rgNumber": "41.432.729-1",
-      "rgIssuerCode": "SSP/SP",
-      "userType": "SYSADMIN"
+      "name": "System Administrator",
+      "emailAddress": "sysadmin@sigepi.com",
+      "cpfNumber": "31460372034",
+      "rgNumber": "1251723571",
+      "rgIssuerCode": "SSP",
+      "rgIssuerFedUnit": "SP",
+      "userType": "SYS_ADMIN"
     },
     {
       "id": 2,
-      "name": "Regular user",
-      "emailAddress": "regular_user@sigepi.com.br",
-      "cpfNumber": "629561047257",
-      "rgNumber": "7.123423-X",
-      "rgIssuerCode": "SSP/RJ",
-      "userType": "REGULAR_USER"
+      "name": "Technical Support user",
+      "emailAddress": "techsupport@sigepi.com",
+      "cpfNumber": "48531462029",
+      "rgNumber": "8731876",
+      "rgIssuerCode": "SSP",
+      "rgIssuerFedUnit": "SE",
+      "userType": "TECH_SUPPORT"
+    },
+    {
+      "id": 3,
+      "name": "Customer user",
+      "emailAddress": "user@sigepi.com",
+      "cpfNumber": "37110491099",
+      "rgNumber": "34834723432",
+      "rgIssuerCode": "SSP",
+      "rgIssuerFedUnit": "SP",
+      "userType": "CUSTOMER"
     }
   ]
 }
