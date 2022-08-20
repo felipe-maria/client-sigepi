@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "System admin",
+      "emailAddress": "sys_admin@sigepi.com.br",
+      "cpfNumber": "14296740244",
+      "rgNumber": "41.432.729-1",
+      "rgIssuerCode": "SSP/SP",
+      "userType": "SYSADMIN"
+    },
+    {
+      "id": 2,
+      "name": "Regular user",
+      "emailAddress": "regular_user@sigepi.com.br",
+      "cpfNumber": "629561047257",
+      "rgNumber": "7.123423-X",
+      "rgIssuerCode": "SSP/RJ",
+      "userType": "REGULAR_USER"
+    }
+  ]
+}
