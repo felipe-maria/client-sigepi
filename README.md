@@ -25,13 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-## How to run mock server
-
-If your mock server is not installed, please run:
-`npm install -g json-server` inside your workbench container. </br>
-
-After that you can run: `json-server --watch mock_server/backend_sigepi.json --host 0.0.0.0` </br>
-
-For more information, please visit json-server documentation on: </br>
-https://github.com/typicode/json-server

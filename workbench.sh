@@ -2,7 +2,6 @@
 
 TAG=front-sigepi
 PORT_ANGULAR_SERVER="4200"
-PORT_MOCK_SERVER="3000"
 
 # Build the project
 docker build -t $TAG .
@@ -15,6 +14,5 @@ docker rm $TAG
 docker run -it \
   -v "$(pwd):/var/www" \
   -p $PORT_ANGULAR_SERVER:$PORT_ANGULAR_SERVER \
-  -p $PORT_MOCK_SERVER:$PORT_MOCK_SERVER \
   --name $TAG $TAG \
   bash

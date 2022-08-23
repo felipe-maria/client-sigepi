@@ -4,4 +4,4 @@ WORKDIR /var/www
 RUN npm install -g @angular/cli@14.0.5
 
 # replace this with your application's default port
-EXPOSE 4200 3000
+EXPOSE 4200
