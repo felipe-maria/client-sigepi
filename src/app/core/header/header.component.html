@@ -1,23 +1,49 @@
+<!-- Fixed navbar -->
 <header>
-  <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Sigepi</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="ticketsDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tickets
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="ticketsDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Manage tickets</a></li>
+              <li><a class="dropdown-item" href="#">Open a ticket</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="certificatesDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Certificates
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="certificatesDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Manage certificates</a></li>
+              <li><a class="dropdown-item" href="#">Create a certificate</a></li>
+            </ul>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <mat-icon>account_circle</mat-icon>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <mat-icon>exit_to_app</mat-icon>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
+
 </header>
+

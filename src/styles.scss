@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+$sigepi-bkgcolor: #F1f1f1;
+
+body {
+  background-color: $sigepi-bkgcolor;
+}
+
+article {
+  background-color: $sigepi-bkgcolor;
+  padding-top: 60px;
+}
+
+html {
+  height: 100%;
+  background-color: $sigepi-bkgcolor;
+}
+
+//html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

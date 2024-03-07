@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxPopper } from 'angular-popper';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderModule } from './core/header/header.module';
+import { CoreModule } from './core/core.module';
+import { HomeModule } from './page/home/home.module';
 
 @NgModule({
   declarations: [
@@ -11,8 +14,11 @@ import { HeaderModule } from './core/header/header.module';
   ],
   imports: [
     BrowserModule,
-    HeaderModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NgxPopper,
+    HomeModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
