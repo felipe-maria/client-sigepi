@@ -2,14 +2,22 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
 import { UserResolver } from './shared/domain/resolver/user-resolver';
+import {AddTicketComponent} from "./page/tickets/add-ticket/add-ticket.component";
 
 const routes: Routes = [
+
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
   {
     path: 'home',
-    component: HomeComponent,
-    resolve: {
-      user: UserResolver
-    }
+    component: HomeComponent
+  },
+  {
+    path: 'addTicket',
+    component: AddTicketComponent
   }
 ];
 
