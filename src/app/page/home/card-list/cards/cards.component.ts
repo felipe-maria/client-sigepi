@@ -13,22 +13,26 @@ export class CardsComponent implements OnInit {
             {
                 title: 'Manage tickets',
                 text: 'Shows a list of all tickets that I can see',
-                buttonText: 'Manage tickets'
+                buttonText: 'Manage tickets',
+                url: '/listTickets'
             },
             {
                 title: 'Open a ticket',
                 text: 'Open a ticket to help desk team',
-                buttonText: 'Open a ticket'
+                buttonText: 'Open a ticket',
+                url: '/addTicket'
             },
             {
                 title: 'Manage certificates',
                 text: 'Shows a list of all digital certificates on the system',
-                buttonText: 'Manage certificates'
+                buttonText: 'Manage certificates',
+                url: '/listCertificates'
             },
             {
                 title: 'Create a certificate',
                 text: 'Create a digital certificate using this form',
-                buttonText: 'Create a certificate'
+                buttonText: 'Create a certificate',
+                url: '/addCertificate'
             }
         ];
 

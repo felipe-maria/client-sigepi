@@ -2,10 +2,6 @@
 
 $sigepi-bkgcolor: #F1f1f1;
 
-body {
-  background-color: $sigepi-bkgcolor;
-}
-
 article {
   background-color: $sigepi-bkgcolor;
   padding-top: 60px;
@@ -20,4 +16,5 @@ html {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $sigepi-bkgcolor;
 }

@@ -10,5 +10,6 @@ export class CardComponent {
   @Input() title = '';
   @Input() text = '';
   @Input() buttonText = '';
+  @Input() url = '';
 
 }
