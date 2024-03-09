@@ -17,8 +17,8 @@ export class CardsComponent implements OnInit {
                 url: '/listTickets'
             },
             {
-                title: 'Open a ticket',
-                text: 'Open a ticket to help desk team',
+                title: 'Create a ticket',
+                text: 'Create a ticket to Help-desk team',
                 buttonText: 'Open a ticket',
                 url: '/addTicket'
             },
@@ -30,7 +30,7 @@ export class CardsComponent implements OnInit {
             },
             {
                 title: 'Create a certificate',
-                text: 'Create a digital certificate using this form',
+                text: 'Create a digital certificate control',
                 buttonText: 'Create a certificate',
                 url: '/addCertificate'
             }

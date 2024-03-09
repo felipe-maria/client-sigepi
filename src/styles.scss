@@ -3,18 +3,15 @@
 $sigepi-bkgcolor: #F1f1f1;
 
 article {
-  background-color: $sigepi-bkgcolor;
   padding-top: 60px;
 }
 
 html {
   height: 100%;
-  background-color: $sigepi-bkgcolor;
 }
 
 //html, body { height: 100%; }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: $sigepi-bkgcolor;
 }
