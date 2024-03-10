@@ -14,5 +14,6 @@ docker rm $TAG
 docker run -it \
   -v "$(pwd):/var/www" \
   -p $PORT_ANGULAR_SERVER:$PORT_ANGULAR_SERVER \
+  -p 3000:3000 \
   --name $TAG $TAG \
   bash

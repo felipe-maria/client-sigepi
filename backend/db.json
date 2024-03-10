@@ -1,0 +1,9 @@
+{
+  "tickets": [
+    {
+      "id": 1,
+      "title": "Teste",
+      "description": "Teste"
+    }
+  ]
+}
