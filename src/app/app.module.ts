@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './page/home/home.module';
 import {TicketsModule} from "./page/tickets/tickets.module";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {TicketsModule} from "./page/tickets/tickets.module";
     NgxPopper,
     HomeModule,
     CoreModule,
-    TicketsModule
+    TicketsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

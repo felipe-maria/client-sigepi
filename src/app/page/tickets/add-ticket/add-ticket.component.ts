@@ -1,4 +1,7 @@
 import {Component} from "@angular/core";
+import {Router} from "@angular/router";
+import {CreateTicketDTO} from "../../../shared/domain/create-ticket-input";
+import {CreateTicketService} from "../../../service/ticket/create-ticket.service";
 
 @Component({
   selector: 'add-ticket',
@@ -7,4 +10,26 @@ import {Component} from "@angular/core";
 })
 export class AddTicketComponent {
 
+  private readonly homeRoute: string = '/home'
+
+  ticket: CreateTicketDTO = {
+    title: '',
+    description: ''
+  }
+
+  constructor(
+    private service: CreateTicketService,
+    private router: Router
+  ) { }
+
+
+  goBack() {
+    this.router.navigate([this.homeRoute])
+  }
+
+  createTicket() {
+    this.service.create(this.ticket).subscribe(() => {
+      this.router.navigate([this.homeRoute]);
+    })
+  }
 }
