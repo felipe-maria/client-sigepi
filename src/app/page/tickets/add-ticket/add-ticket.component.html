@@ -29,9 +29,13 @@
 
     <div class="btn-group" role="group" aria-label="Button group">
         <button (click)="createTicket()" class="btn btn-primary btn-lg rounded me-3">Create ticket</button>
-        <button (click)="goBack()" class="btn btn-secondary btn-lg rounded">Back</button>
+        <button class="btn btn-secondary btn-lg rounded" data-bs-target="#confirmationModal" data-bs-toggle="modal">
+          Back
+        </button>
     </div>
 
   </form>
 
 </div>
+
+<app-confirmation-modal></app-confirmation-modal>

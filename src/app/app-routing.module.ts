@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './page/home/home.component';
-import { UserResolver } from './shared/domain/resolver/user-resolver';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {HomeComponent} from './page/home/home.component';
 import {AddTicketComponent} from "./page/tickets/add-ticket/add-ticket.component";
 
 const routes: Routes = [
@@ -20,7 +19,6 @@ const routes: Routes = [
     component: AddTicketComponent
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

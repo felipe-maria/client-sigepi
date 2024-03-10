@@ -22,14 +22,10 @@ export class AddTicketComponent {
     private router: Router
   ) { }
 
-
-  goBack() {
-    this.router.navigate([this.homeRoute])
-  }
-
   createTicket() {
     this.service.create(this.ticket).subscribe(() => {
       this.router.navigate([this.homeRoute]);
     })
   }
+
 }
