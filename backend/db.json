@@ -2,8 +2,27 @@
   "tickets": [
     {
       "id": 1,
-      "title": "Teste",
-      "description": "Teste"
+      "title": "I cannot open my MS. Word",
+      "requester": "Joe Doe",
+      "responsible": "Mary Jane",
+      "creationDate": "21/03/2023",
+      "status": "In progress"
+    },
+    {
+      "id": 2,
+      "title": "Invoices are not been exported",
+      "requester": "Renata Veloso",
+      "responsible": "Beatriz Lince",
+      "creationDate": "01/01/2023",
+      "status": "Open"
+    },
+    {
+      "id": 3,
+      "title": "I cannot open my mail box",
+      "requester": "Mr. Bean",
+      "responsible": "Bussaco's man ",
+      "creationDate": "15/05/2022",
+      "status": "Resolved"
     }
   ]
 }

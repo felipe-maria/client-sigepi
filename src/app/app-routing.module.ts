@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './page/home/home.component';
 import {AddTicketComponent} from "./page/tickets/add-ticket/add-ticket.component";
+import {ListTicketComponent} from "./page/tickets/list-ticket/list-ticket.component";
 
 const routes: Routes = [
 
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'addTicket',
     component: AddTicketComponent
+  },
+  {
+    path: 'listTickets',
+    component: ListTicketComponent
   }
 ];
 @NgModule({

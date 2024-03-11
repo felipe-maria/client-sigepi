@@ -1,0 +1,33 @@
+<div class="container py-4">
+
+  <h4 class="mb-3 mt-5">Tickets list</h4>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Responsible</th>
+        <th scope="col">Requester</th>
+        <th scope="col">Creation</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let ticket of tickets">
+      <tr>
+        <th scope="row">{{ ticket.id }}</th>
+        <td>{{ ticket.title }}</td>
+        <td>{{ ticket.requester }}</td>
+        <td>{{ ticket.responsible }}</td>
+        <td>{{ ticket.creationDate }}</td>
+        <td>{{ ticket.status }}</td>
+        <td><a href="">Edit</a>, <a href="">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button (click)="goBack()" class="btn btn-secondary btn-lg rounded">Back</button>
+
+</div>
+
