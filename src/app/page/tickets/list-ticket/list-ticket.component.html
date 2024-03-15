@@ -22,7 +22,10 @@
         <td>{{ ticket.responsible }}</td>
         <td>{{ ticket.creationDate }}</td>
         <td>{{ ticket.status }}</td>
-        <td><a href="">Edit</a>, <a href="">Delete</a></td>
+        <td>
+          <a href="">Edit</a>,
+          <a routerLink="/tickets/deleteTicket/{{ ticket.id }}">Delete</a>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -30,4 +33,3 @@
   <button (click)="goBack()" class="btn btn-secondary btn-lg rounded">Back</button>
 
 </div>
-

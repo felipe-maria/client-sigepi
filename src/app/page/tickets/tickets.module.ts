@@ -4,12 +4,16 @@ import {FormsModule} from "@angular/forms";
 import {CancelTicketCreationModalComponent} from "./cancel-ticket-creation-modal/cancel-ticket-creation-modal.component";
 import {SharedModule} from "../../shared/shared.module";
 import {ListTicketComponent} from "./list-ticket/list-ticket.component";
+import {DeleteTicketModalComponent} from "./delete-ticket-modal/delete-ticket-modal.component";
+import {EditTicketComponent} from "./edit-ticket/edit-ticket.component";
 
 @NgModule({
     declarations: [
         AddTicketComponent,
         CancelTicketCreationModalComponent,
-        ListTicketComponent
+        ListTicketComponent,
+        DeleteTicketModalComponent,
+        EditTicketComponent
     ],
     imports: [
         FormsModule,
@@ -18,7 +22,9 @@ import {ListTicketComponent} from "./list-ticket/list-ticket.component";
     exports: [
         AddTicketComponent,
         CancelTicketCreationModalComponent,
-        ListTicketComponent
+        ListTicketComponent,
+        DeleteTicketModalComponent,
+        EditTicketComponent
     ]
 })
 export class TicketsModule {

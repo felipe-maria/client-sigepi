@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {Router} from "@angular/router";
 import {CreateTicketDTO} from "../../../shared/domain/create-ticket-input";
-import {CreateTicketService} from "../../../service/ticket/create-ticket.service";
+import {TicketService} from "../../../service/ticket/ticket.service";
 
 @Component({
   selector: 'add-ticket',
@@ -18,7 +18,7 @@ export class AddTicketComponent {
   }
 
   constructor(
-    private service: CreateTicketService,
+    private service: TicketService,
     private router: Router
   ) { }
 

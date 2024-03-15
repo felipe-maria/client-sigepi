@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
-import {ListTicketService} from "../../../service/ticket/list-ticket.service";
 import {TicketVO} from "../../../shared/domain/ticket-vo";
+import {TicketService} from "../../../service/ticket/ticket.service";
 
 @Component({
   selector: 'list-ticket',
@@ -12,7 +12,7 @@ export class ListTicketComponent implements OnInit {
   tickets: TicketVO[] = []
 
   constructor(
-    private service: ListTicketService,
+    private service: TicketService,
     private router: Router
   ) {
   }

@@ -1,0 +1,86 @@
+<div class="container py-4">
+
+  <h4 class="mb-3 mt-5">Edit a ticket</h4>
+
+  <form>
+
+    <div class="mb-3">
+      <label class="form-label" for="title">Title</label>
+      <input
+        id="title"
+        name="title"
+        type="text"
+        class="form-control"
+        placeholder="A brief description of the issue"
+        [(ngModel)]="ticket.title" />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="description">Description</label>
+      <textarea
+        id="description"
+        name="description"
+        type="text"
+        class="form-control"
+        placeholder="Describe here the issue you are having"
+        style="height: 10rem;"
+        [(ngModel)]="ticket.description"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="description">Description</label>
+      <input
+        id="responsible"
+        name="responsible"
+        type="text"
+        class="form-control"
+        placeholder="This is a provisory field"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="requester">Requester</label>
+      <input
+        id="requester"
+        name="requester"
+        type="text"
+        class="form-control"
+        placeholder="This is a provisory field"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="description">Creation date</label>
+      <input
+        id="creationDate"
+        name="creationDate"
+        type="text"
+        class="form-control"
+        placeholder="This is a provisory field"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="description">Status</label>
+      <input
+        id="status"
+        name="status"
+        type="text"
+        class="form-control"
+        placeholder="This is a provisory field"
+      />
+    </div>
+
+    <div class="btn-group" role="group" aria-label="Button group">
+      <button (click)="updateTicket()" class="btn btn-primary btn-lg rounded me-3">Create ticket</button>
+      <button class="btn btn-secondary btn-lg rounded" data-bs-target="#confirmationModal" data-bs-toggle="modal">
+        Back
+      </button>
+    </div>
+
+  </form>
+
+</div>
+
+<app-confirmation-modal></app-confirmation-modal>
+
