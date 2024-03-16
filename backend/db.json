@@ -6,7 +6,7 @@
       "requester": "Joe Doe",
       "responsible": "Mary Jane",
       "creationDate": "21/03/2023",
-      "status": "In progress"
+      "status": "PENDING"
     },
     {
       "id": 3,
@@ -14,16 +14,16 @@
       "requester": "Mr. Bean",
       "responsible": "Bussaco's man ",
       "creationDate": "15/05/2022",
-      "status": "Resolved"
+      "status": "RESOLVED"
     },
     {
       "title": "E-mail não funciona",
       "description": "Prezados, por favor verificar erro no e-mail. \nE-mail estão parados na caixa de saída. Obrigada.",
       "id": 4,
-      "responsible": "",
+      "responsible": "Felipe Maria",
       "requester": "Renata Veloso",
       "creationDate": "15/03/2024",
-      "status": "PENDING"
+      "status": "RESOLVED"
     }
   ]
 }

@@ -28,18 +28,6 @@
     </div>
 
     <div class="mb-3">
-      <label class="form-label" for="responsible">Responsible</label>
-      <input
-        id="responsible"
-        name="responsible"
-        type="text"
-        class="form-control"
-        placeholder="This is a provisory field"
-        [(ngModel)]="ticket.responsible"
-      />
-    </div>
-
-    <div class="mb-3">
       <label class="form-label" for="requester">Requester</label>
       <input
         id="requester"
@@ -48,6 +36,18 @@
         class="form-control"
         placeholder="This is a provisory field"
         [(ngModel)]="ticket.requester"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="responsible">Responsible</label>
+      <input
+        id="responsible"
+        name="responsible"
+        type="text"
+        class="form-control"
+        placeholder="This is a provisory field"
+        [(ngModel)]="ticket.responsible"
       />
     </div>
 
@@ -65,19 +65,17 @@
 
     <div class="mb-3">
       <label class="form-label" for="status">Status</label>
-      <input
-        id="status"
-        name="status"
-        type="text"
-        class="form-control"
-        placeholder="This is a provisory field"
-        [(ngModel)]="ticket.status"
-      />
+      <select id="status" name="status" class="form-select" aria-label="Default select example" [(ngModel)]="ticket.status">
+        <option selected>Select a status</option>
+        <option value="PENDING">Pending</option>
+        <option value="IN_PROGRESS">In Progress</option>
+        <option value="RESOLVED">Resolved</option>
+      </select>
     </div>
 
     <div class="btn-group" role="group" aria-label="Button group">
       <button (click)="updateTicket()" class="btn btn-primary btn-lg rounded me-3">Update ticket</button>
-      <button class="btn btn-secondary btn-lg rounded" data-bs-target="#confirmationModal" data-bs-toggle="modal">
+      <button (click)="goBack()"class="btn btn-secondary btn-lg rounded" data-bs-toggle="modal">
         Back
       </button>
     </div>
@@ -86,5 +84,4 @@
 
 </div>
 
-<app-confirmation-modal></app-confirmation-modal>
 

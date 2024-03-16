@@ -1,3 +1,5 @@
+import {TicketStatus} from "./ticket-status";
+
 export interface TicketDto {
 
   id: number,
@@ -6,6 +8,6 @@ export interface TicketDto {
   requester: string,
   responsible: string,
   creationDate: string,
-  status: string
+  status: TicketStatus
 
 }

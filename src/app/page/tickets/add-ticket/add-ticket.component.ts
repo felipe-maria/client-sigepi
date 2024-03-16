@@ -2,6 +2,7 @@ import {Component} from "@angular/core";
 import {Router} from "@angular/router";
 import {TicketService} from "../../../service/ticket/ticket.service";
 import {TicketDto} from "../../../shared/domain/ticket-dto";
+import {TicketStatus} from "../../../shared/domain/ticket-status";
 
 @Component({
   selector: 'add-ticket',
@@ -19,7 +20,7 @@ export class AddTicketComponent {
     requester: '',
     responsible: '',
     creationDate: '',
-    status: ''
+    status: TicketStatus.PENDING
   };
 
   constructor(
