@@ -14,13 +14,13 @@ export class CardsComponent implements OnInit {
                 title: 'Manage tickets',
                 text: 'Shows a list of all tickets that I can see',
                 buttonText: 'Manage tickets',
-                url: '/listTickets'
+                url: '/tickets/list'
             },
             {
                 title: 'Create a ticket',
                 text: 'Create a ticket to Help-desk team',
                 buttonText: 'Open a ticket',
-                url: '/addTicket'
+                url: '/tickets/add'
             },
             {
                 title: 'Manage certificates',

@@ -1,6 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {TicketService} from "../../../service/ticket/ticket.service";
-import {ActivatedRoute, Route, Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 declare var bootstrap: any; // Declare a variável bootstrap para evitar erros de tipo
 
@@ -10,7 +10,7 @@ declare var bootstrap: any; // Declare a variável bootstrap para evitar erros d
 })
 export class DeleteTicketModalComponent implements OnInit {
 
-  private readonly LIST_TICKET_PATH: string = '/listTickets';
+  private readonly LIST_TICKET_PATH: string = '/tickets/list';
 
   id: number = 0;
 

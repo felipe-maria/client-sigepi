@@ -1,8 +1,7 @@
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {CreateTicketDTO} from "../../shared/domain/create-ticket-input";
 import {Injectable} from "@angular/core";
-import {TicketVO} from "../../shared/domain/ticket-vo";
+import {TicketDto} from "../../shared/domain/ticket-dto";
 
 @Injectable({
   providedIn: 'root'
@@ -15,19 +14,30 @@ export class TicketService {
     private http: HttpClient
   ) { }
 
-  create(ticket: CreateTicketDTO): Observable<CreateTicketDTO> {
-    return this.http.post<CreateTicketDTO>(this.API, ticket);
+  create(ticket: TicketDto): Observable<TicketDto> {
+    return this.http.post<TicketDto>(this.API, ticket);
   }
 
-  list(): Observable<TicketVO[]> {
-    return this.http.get<TicketVO[]>(this.API);
+  list(): Observable<TicketDto[]> {
+    return this.http.get<TicketDto[]>(this.API);
   }
 
-  delete(id: number): Observable<TicketVO> {
+  delete(id: number): Observable<TicketDto> {
     const url = `${this.API}/${id}`;
 
-    return this.http.delete<TicketVO>(url);
+    return this.http.delete<TicketDto>(url);
   }
 
+  find(id: number): Observable<TicketDto> {
+    const url = `${this.API}/${id}`;
+
+    return this.http.get<TicketDto>(url);
+  }
+
+  update(ticket: TicketDto): Observable<TicketDto> {
+    const url = `${this.API}/${ticket.id}`;
+
+    return this.http.put<TicketDto>(url, ticket);
+  }
 
 }

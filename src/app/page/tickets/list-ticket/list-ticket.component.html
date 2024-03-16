@@ -3,6 +3,7 @@
   <h4 class="mb-3 mt-5">Tickets list</h4>
 
   <table class="table table-hover">
+    <caption>Tickets list</caption>
     <thead>
       <tr>
         <th scope="col">Id</th>
@@ -23,8 +24,8 @@
         <td>{{ ticket.creationDate }}</td>
         <td>{{ ticket.status }}</td>
         <td>
-          <a href="">Edit</a>,
-          <a routerLink="/tickets/deleteTicket/{{ ticket.id }}">Delete</a>
+          <a routerLink="/tickets/edit/{{ ticket.id }}">Edit</a>,
+          <a routerLink="/tickets/delete/{{ ticket.id }}">Delete</a>
         </td>
       </tr>
     </tbody>

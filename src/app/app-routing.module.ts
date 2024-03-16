@@ -18,19 +18,19 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'addTicket',
+    path: 'tickets/add',
     component: AddTicketComponent
   },
   {
-    path: 'listTickets',
+    path: 'tickets/list',
     component: ListTicketComponent
   },
   {
-    path: 'tickets/deleteTicket/:id',
+    path: 'tickets/delete/:id',
     component: DeleteTicketModalComponent
   },
   {
-    path: 'tickets/editTicket/:id',
+    path: 'tickets/edit/:id',
     component: EditTicketComponent
   }
 ];

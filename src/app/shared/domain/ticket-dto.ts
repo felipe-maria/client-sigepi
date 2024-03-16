@@ -1,7 +1,8 @@
-export interface TicketVO {
+export interface TicketDto {
 
   id: number,
   title: string,
+  description: string,
   requester: string,
   responsible: string,
   creationDate: string,
