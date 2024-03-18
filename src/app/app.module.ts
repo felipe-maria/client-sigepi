@@ -9,6 +9,7 @@ import {CoreModule} from './core/core.module';
 import {HomeModule} from './page/home/home.module';
 import {TicketsModule} from "./page/tickets/tickets.module";
 import {HttpClientModule} from "@angular/common/http";
+import {CertificatesModule} from "./page/certificates/certificates.module";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {HttpClientModule} from "@angular/common/http";
     HomeModule,
     CoreModule,
     TicketsModule,
+    CertificatesModule,
     HttpClientModule
   ],
   providers: [],

@@ -26,13 +26,13 @@ export class CardsComponent implements OnInit {
                 title: 'Manage certificates',
                 text: 'Shows a list of all digital certificates on the system',
                 buttonText: 'Manage certificates',
-                url: '/listCertificates'
+                url: '/certificates/list'
             },
             {
                 title: 'Create a certificate',
                 text: 'Create a digital certificate control',
                 buttonText: 'Create a certificate',
-                url: '/addCertificate'
+                url: '/certificates/add'
             }
         ];
 

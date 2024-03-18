@@ -2,7 +2,6 @@ import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import {TicketDto} from "../../../shared/domain/ticket-dto";
 import {TicketService} from "../../../service/ticket/ticket.service";
-import {TicketStatus} from "../../../shared/domain/ticket-status";
 
 @Component({
   selector: 'list-ticket',
@@ -25,10 +24,6 @@ export class ListTicketComponent implements OnInit {
 
   goBack() {
     this.router.navigate(['/home'])
-  }
-
-  getFunctionalNameOfEnum() {
-    console.log(TicketStatus.PENDING);
   }
 
 }

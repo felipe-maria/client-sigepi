@@ -25,5 +25,18 @@
       "creationDate": "15/03/2024",
       "status": "RESOLVED"
     }
+  ],
+  "certificates": [
+    {
+      "id": 0,
+      "remainingDays": 0,
+      "dueDate": "22/02/2025",
+      "expeditionDate": "22/02/2024",
+      "issuer": "Correios",
+      "media": "Cartão",
+      "category": "A1",
+      "segment": "Pessoa Jurídica",
+      "owner": "Jefferson Caminhões"
+    }
   ]
 }

@@ -5,6 +5,7 @@ import {AddTicketComponent} from "./page/tickets/add-ticket/add-ticket.component
 import {ListTicketComponent} from "./page/tickets/list-ticket/list-ticket.component";
 import {EditTicketComponent} from "./page/tickets/edit-ticket/edit-ticket.component";
 import {DeleteTicketModalComponent} from "./page/tickets/delete-ticket-modal/delete-ticket-modal.component";
+import {ListCertificateComponent} from "./page/certificates/list-certificate/list-certificate.component";
 
 const routes: Routes = [
 
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'tickets/edit/:id',
     component: EditTicketComponent
+  },
+  {
+    path: 'certificates/list',
+    component: ListCertificateComponent
   }
 ];
 @NgModule({

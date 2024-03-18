@@ -1,0 +1,41 @@
+<div class="container py-4">
+
+  <h4 class="mb-3 mt-5">Certificate list</h4>
+
+  <table aria-label="certificateList" class="table table-hover">
+    <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Owner</th>
+      <th scope="col">Segment</th>
+      <th scope="col">Category</th>
+      <th scope="col">Media</th>
+      <th scope="col">Issuer</th>
+      <th scope="col">Expedition date</th>
+      <th scope="col">Due date</th>
+      <th scope="col">Remaining days</th>
+      <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let certificate of certificates">
+      <tr>
+        <th scope="row">{{ certificate.id }}</th>
+        <td>{{ certificate.owner }}</td>
+        <td>{{ certificate.segment }}</td>
+        <td>{{ certificate.category }}</td>
+        <td>{{ certificate.media }}</td>
+        <td>{{ certificate.issuer }}</td>
+        <td>{{ certificate.expeditionDate }}</td>
+        <td>{{ certificate.dueDate }}</td>
+        <td>{{ certificate.remainingDays }}</td>
+        <td>
+          <a routerLink="/certificates/edit/{{ certificate.id }}">Edit</a>,
+          <a routerLink="/certificates/delete/{{ certificate.id }}">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button (click)="goBack()" class="btn btn-secondary btn-lg rounded">Back</button>
+
+</div>
