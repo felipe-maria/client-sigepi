@@ -3,14 +3,13 @@ import {TicketDto} from "../../../shared/domain/ticket-dto";
 import {TicketService} from "../../../service/ticket/ticket.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {TicketStatus} from "../../../shared/domain/ticket-status";
+import {Routes} from "../../../shared/routes";
 
 @Component({
   selector: 'app-edit-ticket',
   templateUrl: './edit-ticket.component.html'
 })
-export class EditTicketComponent implements OnInit{
-
-  private readonly LIST_URL: string = '/tickets/list';
+export class EditTicketComponent implements OnInit {
 
   ticket: TicketDto = {
     id: 0,
@@ -37,11 +36,11 @@ export class EditTicketComponent implements OnInit{
 
   updateTicket() {
     this.service.update(this.ticket).subscribe(() => {
-      this.router.navigate([this.LIST_URL]);
+      this.router.navigate([Routes.TICKET_LIST_ROUTE]);
     })
   }
 
   goBack() {
-    this.router.navigate([this.LIST_URL]);
+    this.router.navigate([Routes.TICKET_LIST_ROUTE]);
   }
 }

@@ -1,6 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {TicketService} from "../../../service/ticket/ticket.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {Routes} from "../../../shared/routes";
 
 declare var bootstrap: any; // Declare a variável bootstrap para evitar erros de tipo
 
@@ -9,8 +10,6 @@ declare var bootstrap: any; // Declare a variável bootstrap para evitar erros d
   templateUrl: './delete-ticket-modal.component.html'
 })
 export class DeleteTicketModalComponent implements OnInit {
-
-  private readonly LIST_TICKET_PATH: string = '/tickets/list';
 
   id: number = 0;
 
@@ -33,12 +32,12 @@ export class DeleteTicketModalComponent implements OnInit {
   deleteTicket() {
     if (this.id) {
       this.service.delete(this.id).subscribe(() => {
-        this.router.navigate([this.LIST_TICKET_PATH])
+        this.router.navigate([Routes.TICKET_LIST_ROUTE])
       })
     }
   }
 
   goBackToList() {
-    this.router.navigate([this.LIST_TICKET_PATH])
+    this.router.navigate([Routes.TICKET_LIST_ROUTE])
   }
 }

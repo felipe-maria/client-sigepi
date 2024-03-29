@@ -3,6 +3,7 @@ import {Router} from "@angular/router";
 import {TicketService} from "../../../service/ticket/ticket.service";
 import {TicketDto} from "../../../shared/domain/ticket-dto";
 import {TicketStatus} from "../../../shared/domain/ticket-status";
+import {Routes} from "../../../shared/routes";
 
 @Component({
   selector: 'app-add-ticket',
@@ -10,8 +11,6 @@ import {TicketStatus} from "../../../shared/domain/ticket-status";
   styleUrls: ['./add-ticket.component.scss']
 })
 export class AddTicketComponent {
-
-  private readonly homeRoute: string = '/home'
 
   ticket: TicketDto = {
     id: 0,
@@ -30,7 +29,7 @@ export class AddTicketComponent {
 
   createTicket() {
     this.service.create(this.ticket).subscribe(() => {
-      this.router.navigate([this.homeRoute]);
+      this.router.navigate([Routes.CERTIFICATE_LIST_ROUTE]);
     })
   }
 

@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
 import {Router} from "@angular/router";
+import {Routes} from "../../../shared/routes";
 
 @Component({
   selector: 'app-confirmation-modal',
@@ -7,10 +8,9 @@ import {Router} from "@angular/router";
 })
 export class CancelTicketCreationModalComponent {
 
-  private readonly homeRoute: string = '/home'
   constructor(private router: Router) { }
 
   cancelTicketCreation() {
-    this.router.navigate([this.homeRoute])
+    this.router.navigate([Routes.HOME_PAGE_ROUTE])
   }
 }

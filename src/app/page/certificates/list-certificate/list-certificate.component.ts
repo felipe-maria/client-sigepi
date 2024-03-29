@@ -2,6 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {CertificateDto} from "../../../shared/domain/certificate-dto";
 import {Router} from "@angular/router";
 import {CertificateService} from "../../../service/ticket/certificate.service";
+import {Routes} from "../../../shared/routes";
 
 @Component({
   selector: 'app-list-certificate',
@@ -23,6 +24,6 @@ export class ListCertificateComponent implements OnInit {
   }
 
   goBack() {
-    this.router.navigate(['/home'])
+    this.router.navigate([Routes.HOME_PAGE_ROUTE])
   }
 }

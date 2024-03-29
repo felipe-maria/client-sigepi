@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 import {CertificateDto} from "../../../shared/domain/certificate-dto";
 import {Router} from "@angular/router";
 import {CertificateService} from "../../../service/ticket/certificate.service";
-import {CERTIFICATE_LIST_ROUTE, HOME_PAGE_ROUTE} from "./constants";
+import {Routes} from "../../../shared/routes";
 
 @Component({
   selector: "app-add-certificate",
@@ -29,11 +29,11 @@ export class AddCertificateComponent {
 
   createCertificate() {
     this.service.create(this.certificate).subscribe(() => {
-      this.router.navigate([ CERTIFICATE_LIST_ROUTE ]);
+      this.router.navigate([ Routes.CERTIFICATE_LIST_ROUTE ]);
     })
   }
 
   goToHomePage() {
-    this.router.navigate([ HOME_PAGE_ROUTE ]);
+    this.router.navigate([ Routes.HOME_PAGE_ROUTE ]);
   }
 }

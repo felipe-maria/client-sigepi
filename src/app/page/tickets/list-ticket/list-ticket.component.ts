@@ -2,6 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import {TicketDto} from "../../../shared/domain/ticket-dto";
 import {TicketService} from "../../../service/ticket/ticket.service";
+import {Routes} from "../../../shared/routes";
 
 @Component({
   selector: 'app-list-ticket',
@@ -23,7 +24,7 @@ export class ListTicketComponent implements OnInit {
   }
 
   goBack() {
-    this.router.navigate(['/home'])
+    this.router.navigate([Routes.HOME_PAGE_ROUTE])
   }
 
 }
