@@ -2,14 +2,13 @@ import {Component} from "@angular/core";
 import {CertificateDto} from "../../../shared/domain/certificate-dto";
 import {Router} from "@angular/router";
 import {CertificateService} from "../../../service/ticket/certificate.service";
+import {CERTIFICATE_LIST_ROUTE, HOME_PAGE_ROUTE} from "./constants";
 
 @Component({
   selector: "app-add-certificate",
   templateUrl: './add-certificate.component.html'
 })
 export class AddCertificateComponent {
-
-  private readonly listCertificateRoute: string = '/certificates/list'
 
   certificate: CertificateDto = {
     id: 0,
@@ -30,7 +29,11 @@ export class AddCertificateComponent {
 
   createCertificate() {
     this.service.create(this.certificate).subscribe(() => {
-      this.router.navigate([this.listCertificateRoute]);
+      this.router.navigate([ CERTIFICATE_LIST_ROUTE ]);
     })
+  }
+
+  goToHomePage() {
+    this.router.navigate([ HOME_PAGE_ROUTE ]);
   }
 }
