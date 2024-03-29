@@ -18,4 +18,8 @@ export class CertificateService {
       return this.http.get<CertificateDto[]>(this.API);
   }
 
+  create(certificate: CertificateDto): Observable<CertificateDto> {
+    return this.http.post<CertificateDto>(this.API, certificate);
+  }
+
 }

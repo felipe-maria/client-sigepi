@@ -2,10 +2,11 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './page/home/home.component';
 import {AddTicketComponent} from "./page/tickets/add-ticket/add-ticket.component";
-import {ListTicketComponent} from "./page/tickets/list-ticket/list-ticket.component";
 import {EditTicketComponent} from "./page/tickets/edit-ticket/edit-ticket.component";
 import {DeleteTicketModalComponent} from "./page/tickets/delete-ticket-modal/delete-ticket-modal.component";
 import {ListCertificateComponent} from "./page/certificates/list-certificate/list-certificate.component";
+import {ListTicketComponent} from "./page/tickets/list-ticket/list-ticket.component";
+import {AddCertificateComponent} from "./page/certificates/add-certificate/add-certificate.component";
 
 const routes: Routes = [
 
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'certificates/list',
     component: ListCertificateComponent
+  },
+  {
+    path: 'certificates/add',
+    component: AddCertificateComponent
   }
 ];
 @NgModule({

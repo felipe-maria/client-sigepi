@@ -1,0 +1,76 @@
+<div class="container py-4">
+  <h4 class="mb-3 mt-5">Create a certificate</h4>
+
+  <form>
+
+    <div class="mb-3">
+      <label class="form-label" for="owner">Owner</label>
+      <input
+        id="owner"
+        name="owner"
+        type="text"
+        class="form-control"
+        placeholder="The certificate's owner" [(ngModel)]="certificate.owner"
+      />
+    </div>
+
+    <div class="mb-3 col-3">
+      <label class="form-label" for="segment">Segment</label>
+      <select id="segment" name="segment" class="form-select" placeholder="The certificate's segment"
+              [(ngModel)]="certificate.segment">
+        <option value="title">Select a segment</option>
+        <option value="E_CPF">eCPF</option>
+        <option value="E_CNPJ">eCNPJ</option>
+      </select>
+    </div>
+
+    <div class="mb-3 col-3">
+      <label class="form-label" for="category">Category</label>
+      <select id="category" name="category" class="form-select" placeholder="The certificate's category"
+              [(ngModel)]="certificate.category">
+        <option value="title">Select a category</option>
+        <option value="A1">A1</option>
+        <option value="A3">A3</option>
+      </select>
+    </div>
+
+    <div class="mb-3 col-3">
+      <label class="form-label" for="media">Media type</label>
+      <select id="media" name="media" class="form-select" placeholder="The certificate's media"
+              [(ngModel)]="certificate.media">
+        <option value="title">Select a media type</option>
+        <option value="FILE">File</option>
+        <option value="TOKEN">Token</option>
+        <option value="CARD">Card</option>
+      </select>
+    </div>
+
+    <div class="mb-3 col-3">
+      <label class="form-label" for="issuer">Issuer</label>
+      <select id="issuer" name="issuer" class="form-select" [(ngModel)]="certificate.issuer">
+        <option value="title">Select a issuer</option>
+        <option value="SERPRO">SERPRO</option>
+        <option value="SERASA">SERASA</option>
+      </select>
+    </div>
+
+    <div class="mb-3 col-2">
+      <label class="form-label" for="expeditionDate">Expedition Date</label>
+      <input
+        id="expeditionDate"
+        name="expeditionDate"
+        type="date"
+        class="form-control"
+        placeholder="The certificate's expedition date" [(ngModel)]="certificate.expeditionDate" />
+    </div>
+
+    <div class="btn-group" role="group" aria-label="Button group">
+      <button (click)="createCertificate()" class="btn btn-primary btn-lg rounded me-3">Create certificate</button>
+      <button class="btn btn-secondary btn-lg rounded">
+        Back
+      </button>
+    </div>
+
+  </form>
+
+</div>

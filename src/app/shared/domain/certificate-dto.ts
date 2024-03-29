@@ -6,8 +6,8 @@ export interface CertificateDto {
   category: string;
   media: string;
   issuer: string;
-  expeditionDate: string;
-  dueDate: string;
+  expeditionDate: Date;
+  dueDate: Date;
   remainingDays: number;
 
 }
