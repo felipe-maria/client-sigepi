@@ -20,7 +20,7 @@
         <td>{{ ticket.title }}</td>
         <td>{{ ticket.requester }}</td>
         <td>{{ ticket.responsible }}</td>
-        <td>{{ ticket.creationDate }}</td>
+        <td>{{ ticket.creationDate | date:'dd/MM/YYYY' }}</td>
         <td>{{ ticket.status }}</td>
         <td>
           <a routerLink="/tickets/edit/{{ ticket.id }}">Edit</a>,
@@ -31,5 +31,6 @@
   </table>
 
   <button (click)="goBack()" class="btn btn-secondary btn-lg rounded">Back</button>
+
 
 </div>

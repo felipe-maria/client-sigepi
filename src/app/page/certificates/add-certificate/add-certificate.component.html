@@ -16,8 +16,7 @@
 
     <div class="mb-3 col-3">
       <label class="form-label" for="segment">Segment</label>
-      <select id="segment" name="segment" class="form-select" placeholder="The certificate's segment"
-              [(ngModel)]="certificate.segment">
+      <select id="segment" name="segment" class="form-select" [(ngModel)]="certificate.segment">
         <option value="title">Select a segment</option>
         <option value="E_CPF">eCPF</option>
         <option value="E_CNPJ">eCNPJ</option>
@@ -26,8 +25,7 @@
 
     <div class="mb-3 col-3">
       <label class="form-label" for="category">Category</label>
-      <select id="category" name="category" class="form-select" placeholder="The certificate's category"
-              [(ngModel)]="certificate.category">
+      <select id="category" name="category" class="form-select" [(ngModel)]="certificate.category">
         <option value="title">Select a category</option>
         <option value="A1">A1</option>
         <option value="A3">A3</option>
@@ -36,8 +34,7 @@
 
     <div class="mb-3 col-3">
       <label class="form-label" for="media">Media type</label>
-      <select id="media" name="media" class="form-select" placeholder="The certificate's media"
-              [(ngModel)]="certificate.media">
+      <select id="media" name="media" class="form-select" [(ngModel)]="certificate.media">
         <option value="title">Select a media type</option>
         <option value="FILE">File</option>
         <option value="TOKEN">Token</option>

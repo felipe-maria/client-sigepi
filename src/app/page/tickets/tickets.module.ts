@@ -5,9 +5,9 @@ import {
   CancelTicketCreationModalComponent
 } from "./cancel-ticket-creation-modal/cancel-ticket-creation-modal.component";
 import {SharedModule} from "../../shared/shared.module";
-import {ListTicketComponent} from "./list-ticket/list-ticket.component";
 import {DeleteTicketModalComponent} from "./delete-ticket-modal/delete-ticket-modal.component";
 import {EditTicketComponent} from "./edit-ticket/edit-ticket.component";
+import {ListTicketComponent} from "./list-ticket/list-ticket.component";
 
 @NgModule({
     declarations: [
@@ -30,7 +30,5 @@ import {EditTicketComponent} from "./edit-ticket/edit-ticket.component";
     ]
 })
 export class TicketsModule {
-
-
 
 }

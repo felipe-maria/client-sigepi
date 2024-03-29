@@ -5,7 +5,7 @@ import {TicketDto} from "../../../shared/domain/ticket-dto";
 import {TicketStatus} from "../../../shared/domain/ticket-status";
 
 @Component({
-  selector: 'add-ticket',
+  selector: 'app-add-ticket',
   templateUrl: './add-ticket.component.html',
   styleUrls: ['./add-ticket.component.scss']
 })
@@ -19,7 +19,7 @@ export class AddTicketComponent {
     description: '',
     requester: '',
     responsible: '',
-    creationDate: '',
+    creationDate: new Date(),
     status: TicketStatus.PENDING
   };
 

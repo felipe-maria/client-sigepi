@@ -18,7 +18,7 @@ export class EditTicketComponent implements OnInit{
     description: '',
     requester: '',
     responsible: '',
-    creationDate: '',
+    creationDate: new Date(),
     status: TicketStatus.PENDING
   };
 

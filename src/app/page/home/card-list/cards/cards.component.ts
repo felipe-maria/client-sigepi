@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Card } from '../card/card';
 
 @Component({
-    selector: 'sigepi-cards',
+    selector: 'app-cards',
     templateUrl: './cards.component.html'
 })
 export class CardsComponent implements OnInit {

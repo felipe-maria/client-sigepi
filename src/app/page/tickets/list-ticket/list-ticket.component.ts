@@ -4,7 +4,7 @@ import {TicketDto} from "../../../shared/domain/ticket-dto";
 import {TicketService} from "../../../service/ticket/ticket.service";
 
 @Component({
-  selector: 'list-ticket',
+  selector: 'app-list-ticket',
   templateUrl: './list-ticket.component.html'
 })
 export class ListTicketComponent implements OnInit {

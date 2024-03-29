@@ -7,7 +7,7 @@ export interface TicketDto {
   description: string,
   requester: string,
   responsible: string,
-  creationDate: string,
+  creationDate: Date,
   status: TicketStatus
 
 }
