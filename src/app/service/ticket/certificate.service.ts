@@ -22,4 +22,9 @@ export class CertificateService {
     return this.http.post<CertificateDto>(this.API, certificate);
   }
 
+  delete(id: number): Observable<CertificateDto> {
+    const url = `${this.API}/${id}`;
+    return this.http.delete<CertificateDto>(url);
+  }
+
 }

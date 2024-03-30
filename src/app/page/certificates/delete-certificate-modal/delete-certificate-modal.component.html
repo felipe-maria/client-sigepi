@@ -1,0 +1,20 @@
+<!-- Modal -->
+<div class="modal fade" id="deleteCertificateModal" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1"
+     aria-labelledby="deleteCertificateModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="deleteCertificateModalLabel">Do you really want to delete this certificate?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        If you confirm, this certificate will be deleted.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"(click)="deleteCertificate()">
+          Confirm</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="goBackToList()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

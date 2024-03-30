@@ -48,28 +48,6 @@
       "expeditionDate": "2024-03-29",
       "dueDate": "",
       "remainingDays": 0
-    },
-    {
-      "id": 3,
-      "owner": "",
-      "segment": "",
-      "category": "",
-      "media": "",
-      "issuer": "",
-      "expeditionDate": "2024-03-19",
-      "dueDate": "2024-03-29T12:16:34.356Z",
-      "remainingDays": 0
-    },
-    {
-      "id": 4,
-      "owner": "Felipe Antonio Maria dos Santos Silva de Jesus",
-      "segment": "E_CPF",
-      "category": "A1",
-      "media": "TOKEN",
-      "issuer": "SERASA",
-      "expeditionDate": "2024-03-23",
-      "dueDate": "2024-03-29T12:23:46.730Z",
-      "remainingDays": 0
     }
   ]
 }
