@@ -10,6 +10,7 @@ import {AddCertificateComponent} from "./page/certificates/add-certificate/add-c
 import {
   DeleteCertificateModalComponent
 } from "./page/certificates/delete-certificate-modal/delete-certificate-modal.component";
+import {EditCertificateComponent} from "./page/certificates/edit-certificate/edit-certificate.component";
 
 const routes: Routes = [
 
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path: 'certificates/delete/:id',
     component: DeleteCertificateModalComponent
+  },
+  {
+    path: 'certificates/edit/:id',
+    component: EditCertificateComponent
   }
 ];
 @NgModule({

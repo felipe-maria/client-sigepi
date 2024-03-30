@@ -27,4 +27,15 @@ export class CertificateService {
     return this.http.delete<CertificateDto>(url);
   }
 
+  find(id: number): Observable<CertificateDto> {
+    const url = `${this.API}/${id}`;
+    return this.http.get<CertificateDto>(url);
+  }
+
+  update(certificate: CertificateDto): Observable<CertificateDto> {
+    const url = `${this.API}/${certificate.id}`;
+
+    return this.http.put<CertificateDto>(url, certificate);
+  }
+
 }

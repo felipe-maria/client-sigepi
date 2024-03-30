@@ -4,12 +4,14 @@ import {FormsModule} from "@angular/forms";
 import {SharedModule} from "../../shared/shared.module";
 import {AddCertificateComponent} from "./add-certificate/add-certificate.component";
 import {DeleteCertificateModalComponent} from "./delete-certificate-modal/delete-certificate-modal.component";
+import {EditCertificateComponent} from "./edit-certificate/edit-certificate.component";
 
 @NgModule({
   declarations: [
     ListCertificateComponent,
     AddCertificateComponent,
-    DeleteCertificateModalComponent
+    DeleteCertificateModalComponent,
+    EditCertificateComponent
   ],
   imports: [
     FormsModule,
@@ -18,7 +20,8 @@ import {DeleteCertificateModalComponent} from "./delete-certificate-modal/delete
   exports: [
     ListCertificateComponent,
     AddCertificateComponent,
-    DeleteCertificateModalComponent
+    DeleteCertificateModalComponent,
+    EditCertificateComponent
   ]
 })
 export class CertificatesModule {
